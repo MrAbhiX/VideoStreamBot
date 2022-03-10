@@ -1,8 +1,19 @@
 {
-    "name": "Video Streaming Bot",
-    "description": "Telegram bot for streaming video in groups",
-    "keywords": ["telegram", "python", "video", "bot"],
-    "repository": "https://github.com/Vegetaxd/VideoStreamBot",
+    "name": "Video x Music Stream Bot",
+    "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by PyTgCalls and Pyrogram",
+    "logo": "https://telegra.ph/file/1c41ded2dd871eb36bd7e.png",
+    "keywords": [
+        "py-tgcalls",
+        "telegram bot",
+        "video stream",
+        "live stream",
+        "music stream",
+        "mongodb",
+        "pyrogram"
+    ],
+    "website": "https://t.me/levinachannel",
+    "repository": "https://github.com/levina-lab/video-stream",
+    "success_url": "https://t.me/dlwrml",
     "env": {
         "STRING_SESSION": {
             "description": "A Pyrogram session string.Generate it using replit",
@@ -29,9 +40,23 @@
             "required": false
       }
     },
+    "addons": [],
     "buildpacks": [
-      {
-        "url": "heroku/python"
-      }
-    ]
-  }
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
