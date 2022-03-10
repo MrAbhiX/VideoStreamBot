@@ -5,28 +5,28 @@
     "repository": "https://github.com/Vegetaxd/VideoStreamBot",
     "env": {
       "STRING_SESSION": {
-        "description": "A Pyrogram session string.Generate it using replit",
-        "required": true
+      "description": "A Pyrogram session string.Generate it using replit",
+      "required": true
       },
       "BOT_TOKEN": {
-        "description": "A bot token from @BotFather.",
-        "required": true
+      "description": "A bot token from @BotFather.",
+      "required": true
       },
       "API_ID": {
-        "description": "An api ID from https://my.telegram.org/apps.",
-        "required": true
+      "description": "An api ID from https://my.telegram.org/apps.",
+      "required": true
       },
       "API_HASH": {
-        "description": "An api hash from https://my.telegram.org/apps.",
-        "required": true
+      "description": "An api hash from https://my.telegram.org/apps.",
+      "required": true
       },
       "VIDEO_CHAT_ID": {
-        "description": "A Group Chat Id To Stream Videos",
-        "required": true
+      "description": "A Group Chat Id To Stream Videos",
+      "required": true
       },
       "CUSTOM_ICON": {
-        "description": "A custom icon to be displayed rather than the default"
-        "required": false
+      "description": "A custom icon to be displayed rather than the default"
+      "required": false
       }
     },
     "buildpacks": [
